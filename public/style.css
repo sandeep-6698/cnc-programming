@@ -22,7 +22,9 @@ body {
   white-space: pre-wrap !important;
 }
 .right-box {
-  padding: 50px !important;
+  padding: 10px !important;
+  height: 300px;
+  overflow-y: scroll;
 }
 pre {
   font-size: 17px !important;

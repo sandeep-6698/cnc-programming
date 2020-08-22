@@ -1,16 +1,16 @@
 <template>
   <div class="row">
-    <app-existing></app-existing>
+    <app-revised
+      :rprog="{ val1:val1, val2:val2, val3:val3 }"
+      @afterProgChanged="getProgAfterChanged"
+    ></app-revised>
     <app-incorporate
       :col1="{value: col1, result: res1}"
       :col2="{value: col2, result: res2}"
       :col3="{value: col3, result: res3}"
       @afterChanged="getAfterChanged"
     ></app-incorporate>
-    <app-revised
-      :rprog="{ val1:val1, val2:val2, val3:val3 }"
-      @afterProgChanged="getProgAfterChanged"
-    ></app-revised>
+    <app-existing></app-existing>
     <app-photo></app-photo>
   </div>
 </template>

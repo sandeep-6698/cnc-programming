@@ -37,11 +37,15 @@
             <span v-else>Try Again</span>
           </td>
         </tr>
+        <tr>
+          <td colspan="3">
+            <div class="alert" :class="{'alert-success': status,'alert-danger': !status}">
+              <span v-if="status">Success!</span>
+              <span v-else>Warning!</span>
+            </div>
+          </td>
+        </tr>
       </table>
-      <div class="alert" :class="{'alert-success': status,'alert-danger': !status}">
-        <span v-if="status">Success!</span>
-        <span v-else>Warning!</span>
-      </div>
     </div>
   </div>
 </template>
